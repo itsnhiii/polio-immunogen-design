@@ -1,0 +1,41 @@
+entities:
+  - file:
+      path: 8E8Z.cif
+      include:
+        - chain:
+            id: E
+        - chain:
+            id: F
+      binding_types:
+        - chain:
+            id: E
+            binding: 101,103,106
+        - chain:
+            id: F
+            binding: 54,95
+      structure_groups:
+        - group:
+            visibility: 0 
+            id: "all"
+        - group:
+            visibility: 1
+            id: E
+            res_index: 99..103,105..108
+        - group:
+            visibility: 1
+            id: F
+            res_index: 25,26,30,54,94,95
+
+  - protein:
+      id: P
+      sequence: 90..105
+
+secondary_structure:
+  - chain:
+      id: P
+      helix: 1..12
+      loop: 13..22
+      helix: 23..30
+      loop: 31..40
+      helix: 41..55
+      loop: 56..62
