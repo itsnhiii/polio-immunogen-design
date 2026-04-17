@@ -1,0 +1,40 @@
+# VLP bind to nAb contact residues in Table 2 (overlapping residues in 'Common' columns) 
+# from https://doi.org/10.1038/s41467-023-41052-9
+
+entities:
+  - file:
+      path: 8E8Z.cif
+
+      include:
+        - chain:
+            id: E   # heavy chain
+        - chain:
+            id: F   # light chain
+
+      binding_types:
+        - chain:
+            id: E
+            not_binding: "all"
+
+        - chain:
+            id: F
+            not_binding: "all"
+            
+        - chain:
+            id: E
+            binding: 99..103,105..108  #shifted -22
+        - chain:
+            id: F
+            binding: 25,26,30,54,94,95  #shifted -20
+
+      structure_groups:
+        - group:
+            id: E
+            visibility: 1
+        - group:
+            id: F
+            visibility: 1
+
+  - protein:
+      id: P
+      sequence: 80..140

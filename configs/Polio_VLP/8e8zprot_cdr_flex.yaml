@@ -1,0 +1,26 @@
+# nAb CDRs
+
+# HC
+# CDR1: GFTFTTYD
+# CDR2: ISPSRDST
+# CDR3: ATASRPSAWVFRSLYTYYYMDV
+
+# LC
+# CDR1: ITDIGYYNY
+# CDR2: DVT
+# CDR3: FSHRSNNIRV
+
+
+entities:
+  - file:
+      path: 8E8Z.cif
+      # Which chain and residues in the .cif file to use as target (uses all chains if unspecified)
+      include: 
+        - chain:
+            id: E   #9H2 heavy chain 
+        - chain:
+            id: F   #9H2 light chain
+
+  - protein:
+      id: P
+      sequence: 80..100

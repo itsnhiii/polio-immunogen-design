@@ -1,0 +1,29 @@
+entities:
+  - file:
+      path: 8E8Z.cif
+      # Which chain and residues in the .cif file to use as target (uses all chains if unspecified)
+      include: 
+        - chain:
+            id: E
+        - chain:
+            id: F
+
+      # Wich regions of the target the design should or should NOT
+      # bind to (this can be left unspecified, then we just bind anywhere)
+      binding_types:
+        - chain:
+            id: E
+            binding: 59,97..103,105..108
+        - chain:
+            id: F
+            binding: 25,29,39,53..55,93..95
+      structure_groups:
+        - group:
+            visibility: 1
+            id: E
+        - group:
+            visibility: 1
+            id: F
+  - protein:
+      id: P
+      sequence: 80..140

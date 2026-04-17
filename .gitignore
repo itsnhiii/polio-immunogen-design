@@ -1,0 +1,18 @@
+# mac
+.DS_Store
+
+# outputs
+outputs/
+logs/
+results/
+
+# structures
+*.pdb
+*.cif
+
+# checkpoints
+*.pt
+*.ckpt
+
+# python
+__pycache__/

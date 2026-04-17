@@ -1,0 +1,38 @@
+entities:
+  - file:
+      path: 7UPD.cif
+      # Which chain and residues in the .cif file to use as target (uses all chains if unspecified)
+      include: 
+        - chain:
+            id: A
+        - chain:
+            id: D
+        - chain:
+            id: G
+
+      # Wich regions of the target the design should or should NOT
+      # bind to (this can be left unspecified, then we just bind anywhere)
+      binding_types:
+        - chain:
+            id: A
+            binding: 302,304,305,307,368..371,375,403..406,440
+        - chain:
+            id: D
+            not_binding: "all"
+        - chain:
+            id: G
+            not_binding: "all"
+
+      structure_groups:
+        - group:
+            visibility: 1
+            id: A
+        - group:
+            visibility: 1
+            id: D
+        - group:
+            visibility: 1
+            id: G
+  - protein:
+      id: P
+      sequence: 80..

@@ -1,0 +1,21 @@
+entities:
+  - file:
+      path: 7K84.cif
+      # Which chain and residues in the .cif file to use as target (uses all chains if unspecified)
+      include: 
+        - chain:
+            id: B
+
+      # Wich regions of the target the design should or should NOT
+      # bind to (this can be left unspecified, then we just bind anywhere)
+      binding_types:
+        - chain:
+            id: B
+            binding: 34,54..56,58,59,61,102..106,108..110
+      structure_groups:
+        - group:
+            visibility: 1
+            id: B
+  - protein:
+      id: P
+      sequence: 80..

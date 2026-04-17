@@ -1,0 +1,19 @@
+rank02_8e8zprot_free_binding_39:
+('A', '100', 'PHE')
+('A', '102', 'GLY')
+('A', '44', 'ALA')
+('A', '91', 'SER')
+('A', '97', 'ILE')
+
+rank2_8e8zprot_24:
+('A', '30', 'TYR')
+('A', '32', 'ASN')
+
+rank01_8e8zprot_free_binding_27:
+('A', '44', 'ALA')
+('A', '46', 'LYS')
+('A', '97', 'ILE')
+('A', '98', 'ARG')
+
+rank1_8e8zprot_16:
+

@@ -1,0 +1,14 @@
+entities:
+  - protein: 
+      id: D
+      sequence: 80..
+  - file:
+      path: 7UOP.cif
+       
+      include: 
+        - chain:
+            id: A
+        - chain:
+            id: B
+        - chain:
+            id: C

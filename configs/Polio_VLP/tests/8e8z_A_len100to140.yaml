@@ -1,0 +1,27 @@
+entities:
+  - file:
+      path: 8E8Z.cif
+
+      include:
+        - chain:
+            id: E
+        - chain:
+            id: F
+
+      binding_types:
+        - chain:
+            id: E
+            binding: 100..103,105..109
+
+
+      structure_groups:
+        - group:
+            visibility: 1
+            id: E
+        - group:
+            visibility: 1
+            id: F
+
+  - protein:
+      id: P
+      sequence: 100..140

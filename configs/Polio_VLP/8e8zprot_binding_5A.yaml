@@ -1,0 +1,43 @@
+# VLP bind to nAb CDR residues 5A from poliovirus
+# nAb CDRs
+
+# HC
+# CDR1: GFTFTTYD
+# CDR2: ISPSRDST
+# CDR3: ATASRPSAWVFRSLYTYYYMDV
+
+# LC
+# CDR1: ITDIGYYNY
+# CDR2: DVT
+# CDR3: FSHRSNNIRV
+
+entities:
+  - file:
+      path: 8E8Z.cif
+
+      include:
+        - chain:
+            id: E
+        - chain:
+            id: F
+
+      binding_types:
+        - chain:
+            id: E
+            binding: 29,52,97..103,105..109 
+
+        - chain:
+            id: F
+            binding: 24..26,29,30,32,53,93..95,97
+
+      structure_groups:
+        - group:
+            visibility: 1
+            id: E
+        - group:
+            visibility: 1
+            id: F
+
+  - protein:
+      id: P
+      sequence: 80..140

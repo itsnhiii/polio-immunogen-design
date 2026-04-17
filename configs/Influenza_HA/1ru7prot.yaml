@@ -1,0 +1,11 @@
+entities:
+  - protein: 
+      id: C
+      sequence: 80..140
+  - file:
+      path: 1RU7.cif 
+      include: 
+        - chain:
+            id: A # HA contains A, C, E, G, I chains
+# 1934 Human H1 Hemagglutinin
+# no binding site specified

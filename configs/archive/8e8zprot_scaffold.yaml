@@ -1,0 +1,55 @@
+entities:
+
+  # Antibody target
+  - file:
+      path: 8E8Z.cif
+
+      include:
+        - chain:
+            id: E   # 9H2 heavy
+        - chain:
+            id: F   # 9H2 light
+
+      binding_types:
+        - chain:
+            id: E
+            not_binding: "all"
+        - chain:
+            id: F
+            not_binding: "all"
+
+
+  # Designed miniprotein scaffold
+  - protein:
+      id: P
+      sequence: 80..140
+
+
+  # VP1 epitope residues fused into scaffold
+  - file:
+      path: 8E8Z.cif
+      fuse: P
+
+      include:
+        - chain:
+            id: A
+            res_index: 81,84,85,86,88,145,147,205,207,213,218   # VP1 epitope (shifted -21)
+      binding_types:
+        - chain:
+            id: A
+            binding: "all"
+
+
+  # VP2 epitope residues fused into scaffold
+  - file:
+      path: 8E8Z.cif
+      fuse: P
+
+      include:
+        - chain:
+            id: B
+            res_index: 130,133,158   # VP2 epitope (shifted -9)
+      binding_types:
+        - chain:
+            id: B
+            binding: "all"
