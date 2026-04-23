@@ -23,14 +23,4 @@ entities:
 
   - protein:
       id: P
-      sequence: 90..105
-
-secondary_structure:  # CANT DO THIS, HAVE TO GROUP ALL INDICES
-  - chain:
-      id: P
-      helix: 1..12
-      loop: 13..22
-      helix: 23..30
-      loop: 31..40
-      helix: 41..55
-      loop: 56..26
+      sequence: 140..160

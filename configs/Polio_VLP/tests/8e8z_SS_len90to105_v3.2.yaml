@@ -28,12 +28,10 @@ entities:
 
   - protein:
       id: P
-      sequence: 100..140
-# secondary_structure:
-#   - chain:
-#       id: P
-#       loop: 1..15        # arm to B (longer)
-#       helix: 16..25
-#       loop: 26..45       # central region → bind A (long + flexible)
-#       helix: 46..55
-#       loop: 56..70       # arm to C (longer)
+      sequence: 120..160
+
+secondary_structure:
+  - chain:
+      id: P
+      helix: 10..25,50..65
+      loop: 1..9,26..49,66..100

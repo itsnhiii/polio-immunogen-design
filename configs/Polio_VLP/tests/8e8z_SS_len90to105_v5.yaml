@@ -18,7 +18,7 @@ entities:
             visibility: 0 
             id: "all"
         - group:
-            visibility: 1
+            visibility: 1 
             id: E
             res_index: 99..103,105..108
         - group:
@@ -28,14 +28,12 @@ entities:
 
   - protein:
       id: P
-      sequence: 90..105
-
-secondary_structure:
-  - chain:
-      id: P
-      helix: 1..12
-      loop: 13..22
-      helix: 23..30
-      loop: 31..40
-      helix: 41..55
-      loop: 56..62
+      sequence: 100..140
+# secondary_structure:
+#   - chain:
+#       id: P
+#       loop: 1..15        # arm to B (longer)
+#       helix: 16..25
+#       loop: 26..45       # central region → bind A (long + flexible)
+#       helix: 46..55
+#       loop: 56..70       # arm to C (longer)

@@ -1,36 +1,27 @@
 entities:
   - file:
       path: 8E8Z.cif
+
       include:
         - chain:
             id: E
         - chain:
             id: F
+
       binding_types:
         - chain:
             id: E
             binding: 101,103,106
-        - chain:
-            id: F
-            binding: 54,95
+
+
       structure_groups:
         - group:
             visibility: 1
             id: E
         - group:
-            visibility: 2
+            visibility: 1
             id: F
 
   - protein:
       id: P
-      sequence: 90..105
-
-secondary_structure:  # CANT DO THIS, HAVE TO GROUP ALL INDICES
-  - chain:
-      id: P
-      helix: 1..12
-      loop: 13..22
-      helix: 23..30
-      loop: 31..40
-      helix: 41..55
-      loop: 56..26
+      sequence: 140..160
