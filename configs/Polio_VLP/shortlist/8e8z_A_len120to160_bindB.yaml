@@ -1,18 +1,21 @@
 entities:
   - file:
       path: 8E8Z.cif
+
       include:
         - chain:
             id: E
         - chain:
             id: F
+
       binding_types:
         - chain:
             id: E
-            binding: 101,103,106
+            binding: 100..103,105..110
         - chain:
             id: F
-            binding: 54,95
+            binding: 26
+
       structure_groups:
         - group:
             visibility: 1
