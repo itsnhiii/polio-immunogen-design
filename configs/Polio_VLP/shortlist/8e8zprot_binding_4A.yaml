@@ -40,4 +40,4 @@ entities:
 
   - protein:
       id: P
-      sequence: 140..160
+      sequence: 140..180

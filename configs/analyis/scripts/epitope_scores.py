@@ -18,9 +18,10 @@ DESIGN_LOCK_SEL = "segid C"
 # key hotspot clusters on the antibody side
 # native numbering after shift convention (-22 HC, -20 HC)
 # CLUSTER_A = [101, 103, 106]   # heavy-chain hotspot
-CLUSTER_A = [101, 102, 103, 104, 105, 107, 108, 109, 110]     # whole patch
-CLUSTER_B = [25, 26, 30, 54]          # light-chain patch 1
-CLUSTER_C = [94, 95]              # light-chain patch 2
+CLUSTER_A = [101, 102, 103, 104, 105, 107, 108, 109, 110]     # heavy-chain whole patch
+CLUSTER_B = [25, 26, ]          # light-chain hotspots cdr3
+# CLUSTER_B = [25, 26, 30, 54]          # light-chain patch 1 (A_120-160 doesn't cover)
+CLUSTER_C = [94, 95]              # light-chain cdr2
 
 
 def get_contacting_key_residues(key_atoms, lock_atoms, cutoff=4.5):
